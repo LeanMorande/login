@@ -58,41 +58,13 @@
       </form>
     </div>
 
-    <section>
-      <h1>Acerca de Nosotros</h1>
-    </section>
-    <section>
-      <h1>FAQ</h1>
-    </section>
-
     <footer>Todos los Errores reservados...</footer>
-    <script>
+    <script src="Js/app.js">
       src =
         "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js";
       integrity =
         "sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa";
       crossorigin = "anonymous";
-
-      const forma = document.querySelector("#formulario");
-      console.log(forma);
-
-      forma.addEventListener("submit", mostrarConsola);
-
-      function mostrarConsola(e) {
-        e.preventDefault();
-        const usuario = document.querySelector("#usuario").value;
-        const pass = document.querySelector("#pass").value;
-        console.log(usuario, pass);
-      }
-      window.addEventListener("scroll", function () {
-        let navArea = document.getElementById("navArea");
-
-        if (window.pageYOffset > 0) {
-          navArea.classList.add("is-sticky");
-        } else {
-          navArea.classList.remove("is-sticky");
-        }
-      });
     </script>
   </body>
 </html>
