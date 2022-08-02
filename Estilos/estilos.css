@@ -6,7 +6,7 @@
 
 body {
   font-family: lato;
-  background-image: src("/Media/orion-nebula-11107.jpg");
+  background-image: url(../Media/orion-nebula-11107.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -72,11 +72,11 @@ footer {
 #formulario {
   background-color: rgba(0, 0, 0, 0.678);
   padding: 50px;
-  border-radius: 5px;
+  border-radius: 10px;
   color: white;
 }
 #bodyPortada {
-  background-image: url("https://wall.alphacoders.com/by_sub_category.php?id=124042&name=Espacio+Fondos+de+pantalla&lang=Spanish");
+  background-image: url(../Media/orion-nebula-11107.jpg);
 }
 #degaDiv {
   display: flex;
@@ -88,18 +88,22 @@ footer {
   width: 500px;
   height: 350px;
   background-color: rgba(0, 0, 0, 0.819);
-  color:#fff;
+  color: #fff;
+  border-radius: 10px;
 }
-.rojo{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  margin 0;
+
+.rojo {
+  margin: 0;
   font-size: 50px;
   text-shadow: 0 0 5px red, 0 0 15px red;
 }
 
-.amarillo{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  margin 0;
+.amarillo {
+  margin: 0;
   font-size: 50px;
   text-shadow: 0 0 5px yellow, 0 0 15px yellow;
+}
+
+h2 {
+  text-align: center;
 }

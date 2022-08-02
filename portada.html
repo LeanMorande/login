@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="Estilos/estilos.css" />
   </head>
-  <body >
+  <body id="bodyPortada">
     <nav id="navArea">
       <div class="logo">
         <a href="#">
@@ -27,10 +27,12 @@
     </nav>
     <div id="degaDiv">
       <div>
-        <h1 id="degaTitulo">Deganutti's</h1>
+        <h1 id="degaTitulo" class="amarillo">Deganutti's</h1>
         <h2>Gaming Store</h2>
       </div>
     </div>
+    <div>hola</div>
+    
     <footer>Todos los Errores reservados...</footer>
     <script src="Js/app.js">
       src =
@@ -40,16 +42,18 @@
       crossorigin = "anonymous";
     </script>
     <script>
-        const num = 1;
+      let num = 1;
       setInterval(() => {
-return  num++    
-}, 1000);
-if ((num % 2) == 0) {
-    document.querySelector("#degaTitulo").classList.add("rojo");
-}
-else{
-    document.querySelector("#degaTitulo").classList.add("amarillo");
-}
+        if (num % 2 !== 0) {
+          document.querySelector("#degaTitulo").classList.remove("amarillo");
+          document.querySelector("#degaTitulo").classList.add("rojo");
+        } else {
+          document.querySelector("#degaTitulo").classList.remove("rojo");
+          document.querySelector("#degaTitulo").classList.add("amarillo");
+        }
+
+        return num++;
+      }, 1000);
     </script>
   </body>
 </html>
